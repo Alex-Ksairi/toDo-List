@@ -1,0 +1,314 @@
+/* all imported files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* the imported fonts google */
+/* variables here */
+/* styling starts right below  */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  /* BANNER - TOP */
+  /* CONTAINER */
+}
+
+body .top {
+  width: 100%;
+  height: 35vh;
+  position: relative;
+}
+
+body .top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .top .date {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  top: "";
+  right: "";
+  color: white;
+  font-size: 2.4rem;
+}
+
+body .top .heading {
+  position: absolute;
+  bottom: "";
+  left: 50%;
+  top: 30%;
+  right: "";
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px #520340;
+}
+
+body .entry {
+  width: 100%;
+  height: 70px;
+  background: #f2f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .entry select,
+body .entry input,
+body .entry button {
+  border-radius: 3px;
+  border: none;
+  background: #f50475;
+  color: white;
+  padding: 0 5px;
+  font-size: 1.4rem;
+}
+
+body .entry select:focus,
+body .entry input:focus,
+body .entry button:focus {
+  outline: none;
+}
+
+body .entry select {
+  width: 120px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+body .entry input {
+  width: 300px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+body .entry input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+body .entry input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+body .entry input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+body .entry input:focus::placeholder {
+  color: transparent;
+}
+
+body .entry input ::-webkit-input-placeholder {
+  color: #d5d5d5;
+}
+
+body .entry input :-ms-input-placeholder {
+  color: #d5d5d5;
+}
+
+body .entry input ::-ms-input-placeholder {
+  color: #d5d5d5;
+}
+
+body .entry input ::placeholder {
+  color: #d5d5d5;
+}
+
+body .entry button {
+  width: 70px;
+  height: 35px;
+}
+
+body .entry button:hover {
+  color: #f50475;
+  background: white;
+  border: 1px solid #f50475;
+  cursor: pointer;
+}
+
+body main {
+  width: 100%;
+  min-height: calc(65vh - 70px);
+  padding: 20px 0;
+  background: url("./images/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* animation */
+}
+
+body main .noAction {
+  text-align: center;
+  font-size: 1.8rem;
+  color: red;
+}
+
+body main .container {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  border: 5px solid #520340;
+  border-radius: 3px;
+  display: none;
+}
+
+body main .container .critical {
+  background-color: #f59898;
+}
+
+body main .container .high {
+  background-color: #f7b85a;
+}
+
+body main .container .medium {
+  background-color: #f7e55a;
+}
+
+body main .container .low {
+  background-color: #a3f4ca;
+}
+
+body main .container .todo-item {
+  height: 45px;
+  border-bottom: 1px solid #e4e2e2;
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .container .todo-item .check {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #d5d5d5;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 10px;
+  background: white;
+}
+
+body main .container .todo-item .check i {
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  color: white;
+}
+
+body main .container .todo-item .check:hover {
+  cursor: pointer;
+}
+
+body main .container .todo-item .todo {
+  width: 415px;
+  text-align: left;
+  font-size: 1.4rem;
+  color: black;
+}
+
+body main .container .todo-item .edit {
+  width: 25px;
+  font-size: 2rem;
+  margin-right: 13px;
+  color: #039dae;
+}
+
+body main .container .todo-item .edit:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+body main .container .todo-item .trash {
+  width: 25px;
+  font-size: 1.7rem;
+  color: #2a0d17;
+}
+
+body main .container .todo-item .trash:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+body main .container .todo-item .green {
+  background: green;
+}
+
+body main .container .todo-item .line {
+  color: #a3a3a3;
+  text-decoration: line-through;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+
+body main .noAction > span {
+  -webkit-animation: glow-in 0.8s both;
+          animation: glow-in 0.8s both;
+}
+
+@-webkit-keyframes glow-in {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px red;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+@keyframes glow-in {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px red;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+/*# sourceMappingURL=main.css.map */
